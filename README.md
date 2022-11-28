@@ -1,2 +1,2 @@
 # holbertonschool-csharp
- Holberton AR/VR Specialization first project
+ Holberton AR/VR Specialization - Working with C#
