@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace _9_print_specifiers
+class Program
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+	static void Main(string[] args)
+	{
+		double percent = .7553;
+		double currency = 98765.4321;
+		Console.WriteLine("Percent: {0:0.0%}", percent);
+        Console.WriteLine("Currency: {0:C}", currency);
+	}
 }
