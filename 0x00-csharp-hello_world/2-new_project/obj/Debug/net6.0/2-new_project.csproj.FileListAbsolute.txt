@@ -1,0 +1,15 @@
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\bin\Debug\net6.0\2-new_project.exe
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\bin\Debug\net6.0\2-new_project.deps.json
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\bin\Debug\net6.0\2-new_project.runtimeconfig.json
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\bin\Debug\net6.0\2-new_project.dll
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\bin\Debug\net6.0\ref\2-new_project.dll
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\bin\Debug\net6.0\2-new_project.pdb
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\obj\Debug\net6.0\2-new_project.csproj.AssemblyReference.cache
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\obj\Debug\net6.0\2-new_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\obj\Debug\net6.0\2-new_project.AssemblyInfoInputs.cache
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\obj\Debug\net6.0\2-new_project.AssemblyInfo.cs
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\obj\Debug\net6.0\2-new_project.csproj.CoreCompileInputs.cache
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\obj\Debug\net6.0\2-new_project.dll
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\obj\Debug\net6.0\ref\2-new_project.dll
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\obj\Debug\net6.0\2-new_project.pdb
+C:\Users\Tati Fernandez\OneDrive\Documents\GitHub\holbertonschool-csharp\0x00-csharp-hello_world\2-new_project\obj\Debug\net6.0\2-new_project.genruntimeconfig.cache
