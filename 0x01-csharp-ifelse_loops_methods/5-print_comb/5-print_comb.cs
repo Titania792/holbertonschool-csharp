@@ -6,7 +6,11 @@ namespace _5_print_comb
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            for (int i = 0; i < 99; i++)
+            {
+                Console.Write("{0:00}, ", i);
+            }
+            Console.Write("99\n");
         }
     }
 }
