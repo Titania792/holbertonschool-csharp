@@ -6,10 +6,8 @@ namespace _2_print_alphabet
     {
         static void Main(string[] args)
         {
-            string str = "";
             for (int i = 97; i <= 122; i++)
-                str = str+Convert.ToChar(i);
-            Console.WriteLine(str);
+                Console.Write(Convert.ToChar(i));
         }
     }
 }
