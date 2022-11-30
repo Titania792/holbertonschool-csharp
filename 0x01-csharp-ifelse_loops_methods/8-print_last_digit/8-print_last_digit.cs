@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace _8_print_last_digit
+class Number
 {
-    class Program
+    public static int PrintLastDigit(int number)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        int n = number % 10;
+        if (n < 0)
+            n = n * (-1);
+        Console.Write(n);
+        return n;
     }
 }
