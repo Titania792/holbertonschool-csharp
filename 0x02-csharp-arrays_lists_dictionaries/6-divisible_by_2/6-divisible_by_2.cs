@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _6_divisible_by_2
+class List
 {
-    class Program
+    public static List<bool> DivisibleBy2(List<int> myList)
     {
-        static void Main(string[] args)
+        List<bool> newlist = new List<bool>();
+        for (int i = 0; i < myList.Count; i++)
         {
-            Console.WriteLine("Hello World!");
+            if (myList[i] % 2 == 0)
+                newlist.Add(true);
+            else
+                newlist.Add(false);
         }
+        return newlist;
     }
 }
