@@ -5,20 +5,22 @@ class List
 {
     public static int MaxInteger(List<int> myList)
     {
-        if (myList.Count == 0 || myList == null)
+        int len = myList.Count;
+        if (len == 0 || myList == null)
         {
             Console.WriteLine("List is empty");
             return -1;
         }
-        else
+        /* int biggestint = 0;
+        for (int i = 0; i < myList.Count; i++)
         {
-            int biggestint = 0;
-            for (int i = 0; i < myList.Count; i++)
-            {
-                if (myList[i] > biggestint)
-                    biggestint = myList[i];
-            } 
-            return biggestint;
-        }
+            if (myList[i] > biggestint)
+                biggestint = myList[i];
+        } 
+        return biggestint; 
+        *this code left me with a check wrong so i'm applying Sort method* */
+        myList.Sort();
+        return myList[len -1];
+
     }
 }
