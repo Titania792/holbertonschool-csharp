@@ -10,9 +10,13 @@ namespace _6_print_comb2
         {
             for (int num1 = num + 1; num1 <= 9; num1++)
             {
-                if (num == 8 && num1 == 9)
-                    Console.WriteLine("89");
-                Console.Write("{0}{1}, ", num, num1);
+                Console.Write("{0}{1}", num, num1);
+
+                if (!(num == 8 && num1 == 9))
+                    Console.Write(", ");
+                else
+                    Console.WriteLine();
+
             }                
         }
         }
