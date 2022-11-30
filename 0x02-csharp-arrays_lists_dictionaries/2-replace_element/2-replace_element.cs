@@ -1,12 +1,20 @@
 ﻿using System;
 
-namespace _2_replace_element
+class Array
 {
-    class Program
+    public static int[] ReplaceElement(int[] array, int index, int n)
     {
-        static void Main(string[] args)
+        try
         {
-            Console.WriteLine("Hello World!");
+            array[index] = n;
+            return array;
+        }
+        catch (System.Exception)
+        {
+            
+            Console.WriteLine("Index out of range");
+            return array;
+            throw;
         }
     }
 }
