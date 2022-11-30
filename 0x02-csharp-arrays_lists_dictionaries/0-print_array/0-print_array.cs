@@ -21,12 +21,13 @@ class Array
             for (int i = 0; i < size; i++)
             {
                 array[i] = i;
+                if (i == size-1)
+                {
+                    Console.Write("{0}\n", i);
+                    break;
+                }
+                Console.Write("{0} ", i);
             }
-            foreach (var item in array)
-            {
-                Console.Write("{0} ", item);
-            }
-            Console.Write("\n");
             return array;
         }
     }
