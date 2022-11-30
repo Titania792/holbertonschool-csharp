@@ -1,12 +1,33 @@
 ﻿using System;
 
-namespace _0_print_array
+class Array
 {
-    class Program
+    public static int[] CreatePrint(int size)
     {
-        static void Main(string[] args)
+        if (size < 0)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Size cannot be negative");
+            return null;
+        }
+        else if (size == 0)
+        {
+            int[] array = new int[] {};
+            Console.WriteLine();
+            return array;
+        }
+        else
+        {
+            int[] array = new int[size];
+            for (int i = 0; i < size; i++)
+            {
+                array[i] = i;
+            }
+            foreach (var item in array)
+            {
+                Console.Write("{0} ", item);
+            }
+            Console.Write("\n");
+            return array;
         }
     }
 }
