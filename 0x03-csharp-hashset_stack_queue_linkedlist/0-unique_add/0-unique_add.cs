@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
 
-namespace _0_unique_add
+class List
 {
-    class Program
+    public static int Sum(List<int> myList)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        var uniqlist = myList.Distinct().ToList();
+        int result = 0;
+        for (int i = 0; i < uniqlist.Count; i++)
+            result = result + uniqlist[i];
+        return result;
     }
 }
