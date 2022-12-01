@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
 
-namespace _12_print_sorted_dictionary
+class Dictionary
 {
-    class Program
+    public static void PrintSorted(Dictionary<string, string> myDict)
     {
-        static void Main(string[] args)
+        // access the Keys property. Then use the ToList extension method and the Sort instance method.
+        var list = myDict.Keys.ToList();
+        list.Sort();
+        foreach (var key in list)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("{0}: {1}", key, myDict[key]);
         }
     }
 }
+
