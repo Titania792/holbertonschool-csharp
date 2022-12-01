@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _15_square_matrix
+class Matrix
 {
-    class Program
+    public static int[,] Square(int[,] myMatrix)
     {
-        static void Main(string[] args)
+        int rows = myMatrix.GetLength(0);
+        int cols = myMatrix.GetLength(1);
+        for (int i = 0; i < rows; i++)
         {
-            Console.WriteLine("Hello World!");
+            for (int j = 0; j < cols; j++)
+                myMatrix[i,j] = (int)Math.Pow(myMatrix[i,j], 2);
         }
+        return myMatrix;
     }
 }
+
