@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _13_linkedlist_delete
+class LList
 {
-    class Program
+    public static void Delete(LinkedList<int> myLList, int index)
     {
-        static void Main(string[] args)
+        LinkedListNode<int> current = myLList.First;
+        int i = 0;
+        while(current != null)
         {
-            Console.WriteLine("Hello World!");
+            if (i == index)
+                myLList.Remove(current);
+            i++;
+            current = current.Next;
         }
     }
 }
