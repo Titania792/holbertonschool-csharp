@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _11_linkedlist_sum
+class LList
 {
-    class Program
+    public static int Sum(LinkedList<int> myLList)
     {
-        static void Main(string[] args)
+        int total_data = 0;
+        foreach (var node_value in myLList)
         {
-            Console.WriteLine("Hello World!");
+            total_data = total_data + node_value;
         }
+        return total_data;
     }
 }
