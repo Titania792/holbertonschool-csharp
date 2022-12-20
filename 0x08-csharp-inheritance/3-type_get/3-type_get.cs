@@ -1,12 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
 
-namespace _3_type_get
+class Obj
 {
-    class Program
+    public static void Print(object myObj)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        var type = myObj.GetType();
+        Console.WriteLine(type.Name + " Properties:");
+
+        foreach (PropertyInfo property in type.GetProperties())
+            Console.WriteLine(property.Name);
+            
+        Console.WriteLine(type.Name + " Methods:");
+
+        foreach (MethodInfo method in type.GetMethods())
+            Console.WriteLine(method.Name);
     }
 }
