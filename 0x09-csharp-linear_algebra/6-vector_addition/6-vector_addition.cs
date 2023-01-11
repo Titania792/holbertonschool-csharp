@@ -1,12 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _6_vector_addition
+/// <summary> 6. Vector addition #2 </summary>
+class VectorMath
 {
-    class Program
+    /// <summary> method that adds two vectors and returns the resulting vector. </summary>
+    public static double[] Add(double[] vector1, double[] vector2)
     {
-        static void Main(string[] args)
+        if (vector2.Length == vector1.Length)
         {
-            Console.WriteLine("Hello World!");
+            double[] newvector = new double[vector1.Length];
+            for (int i = 0; i < vector1.Length; i++)
+            {
+                newvector[i] = vector1[i] + vector2[i];
+            }
+            return newvector;
         }
+        return new double[] {-1};
     }
 }
