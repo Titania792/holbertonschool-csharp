@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
+/// <summary> 3. Magnitude #2 </summary>
 class VectorMath
 {
+    /// <summary> method that calculates and returns the length of a given vector </summary>
     public static double Magnitude(double[] vector)
     {
         double sqr = 0;
