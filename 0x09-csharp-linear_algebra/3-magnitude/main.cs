@@ -20,5 +20,9 @@ class Program
         double[] vector3 = {-9};
 
         Console.WriteLine(VectorMath.Magnitude(vector3));
+        
+        double[] vector4 = {};
+
+        Console.WriteLine(VectorMath.Magnitude(vector4));
     }
 }

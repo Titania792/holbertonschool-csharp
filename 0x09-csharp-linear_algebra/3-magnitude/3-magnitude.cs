@@ -12,8 +12,8 @@ class VectorMath
             len += 1;
             sqr = Math.Pow(item, 2) + sqr;
         }
-        if (len == 1 || len > 3)
+        if (len < 2 || len > 3)
             return -1;
-        return Math.Sqrt(sqr);
+        return Math.Round(Math.Sqrt(sqr), 2);
     }
 }
