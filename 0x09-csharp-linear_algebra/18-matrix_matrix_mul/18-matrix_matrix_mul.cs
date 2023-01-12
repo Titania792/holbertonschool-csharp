@@ -12,15 +12,18 @@ class MatrixMath
             matrix1.GetLength(0) != matrix1.GetLength(1))
             return new double[,] {{-1}};
         
+        double aux = 0;
         double[,] nmatrix = new double[matrix1.GetLength(0), matrix2.GetLength(1)];
         for (int i = 0; i < matrix1.GetLength(0); i++)
         {
             for (int j = 0; j < matrix2.GetLength(1); j++)
             {
+                aux = 0;
                 for (int t = 0; t < matrix1.GetLength(1); t++)
                 {
-                    nmatrix[i, j] += matrix1[i, t] * matrix2[t, j];
+                    aux += matrix1[i, t] * matrix2[t, j];
                 }
+                nmatrix[i, j] = aux;
             }
         }
         return nmatrix;
