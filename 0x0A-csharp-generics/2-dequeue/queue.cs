@@ -65,14 +65,25 @@ class Queue<T>
         
         Node node = head;
         T Fvalue;
-        while (node.next != null)
+        if (node.next == null)
         {
-            node = node.next;
+            Fvalue = node.value;
+            count -= 1;
+            head = null;
+            tail = null;
         }
-        Fvalue = node.value;
-        count--;
-        head = null;
-        tail = null;
+        else
+        {
+            while (node.next != tail)
+            {
+                node = node.next;
+            }
+            Fvalue = tail.value;
+            count -= 1;
+            tail = null;
+            node.next = tail;
+        }
+
         return Fvalue;
     }
 }
