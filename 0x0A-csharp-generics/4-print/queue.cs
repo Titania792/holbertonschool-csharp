@@ -55,6 +55,10 @@ class Queue<T>
         }
     }
 
+/// <summary>
+/// removes the first node in the queue and returns its value
+/// </summary>
+/// <returns> node value </returns>
     public T Dequeue()
     {
         if (head == null && tail == null)
@@ -87,6 +91,10 @@ class Queue<T>
         return Fvalue;
     }
 
+/// <summary>
+///  returns value without removing the node
+/// </summary>
+/// <returns> value of the first node of the queue </returns>
     public T Peek()
     {
         if (head == null && tail == null)
@@ -99,20 +107,21 @@ class Queue<T>
 
     }
 
+/// <summary>
+/// prints the queue, starting from the head
+/// </summary>
     public void Print()
     {
-        if (head == null && tail == null)
+        if (head == null)
         {
             Console.WriteLine("Queue is empty");
-            return;
         }
 
         Node node = head;
-        while (node.next != null)
+        while (node != null)
         {
             Console.WriteLine(node.value);
             node = node.next;
         }
-        Console.WriteLine(node.value);
     }
 }
