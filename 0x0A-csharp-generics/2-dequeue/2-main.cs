@@ -8,8 +8,22 @@ class Program
 
         myIntQ.Enqueue(100);
         myIntQ.Enqueue(101);
+        myIntQ.Enqueue(102);
+        myIntQ.Enqueue(103);
+        myIntQ.Enqueue(104);
         Console.WriteLine("Number of nodes in queue: " + myIntQ.Count());
 
+        Console.WriteLine("First value: " + myIntQ.Dequeue());
+        Console.WriteLine("Number of nodes in queue: " + myIntQ.Count());
+
+        Console.WriteLine("First value: " + myIntQ.Dequeue());
+        Console.WriteLine("Number of nodes in queue: " + myIntQ.Count());
+        Console.WriteLine("First value: " + myIntQ.Dequeue());
+        Console.WriteLine("Number of nodes in queue: " + myIntQ.Count());
+        Console.WriteLine("First value: " + myIntQ.Dequeue());
+        Console.WriteLine("Number of nodes in queue: " + myIntQ.Count());
+        Console.WriteLine("First value: " + myIntQ.Dequeue());
+        Console.WriteLine("Number of nodes in queue: " + myIntQ.Count());
         Console.WriteLine("First value: " + myIntQ.Dequeue());
         Console.WriteLine("Number of nodes in queue: " + myIntQ.Count());
 

@@ -80,8 +80,8 @@ class Queue<T>
             }
             Fvalue = tail.value;
             count -= 1;
-            tail = null;
-            node.next = tail;
+            tail = node;
+            node.next = null;
         }
 
         return Fvalue;
