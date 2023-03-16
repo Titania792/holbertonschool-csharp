@@ -1,4 +1,5 @@
 ﻿using System;
+
 /// <summary>
 /// Base class
 /// </summary>
@@ -7,8 +8,8 @@ public abstract class Base
     /// <summary>
     /// Name property
     /// </summary>
-    /// <value>string value</value>
-    public string name {
+    public string name
+    {
         get;
         set;
     }
@@ -37,11 +38,11 @@ public interface IInteractive
 /// <summary>
 /// Interface Breakable
 /// </summary>
-public interface IBreakable {
+public interface IBreakable
+{
     /// <summary>
     /// durability integer
     /// </summary>
-    /// <value>int value</value>
     int durability
     {
         get;
@@ -56,11 +57,11 @@ public interface IBreakable {
 /// <summary>
 /// Interface Collectable
 /// </summary>
-public interface ICollectable {
+public interface ICollectable
+{
     /// <summary>
     /// isCOllected property
     /// </summary>
-    /// <value>Bool value</value>
     bool isCollected
     {
         get;
@@ -75,12 +76,11 @@ public interface ICollectable {
 /// <summary>
 /// Door class
 /// </summary>
-public class Door : Base, IInteractive {
-
+public class Door : Base, IInteractive
+{
     /// <summary>
     /// Constructor of Door
     /// </summary>
-    /// <param name="name"></param>
     public Door(string name="Door")
     {
         this.name = name;
