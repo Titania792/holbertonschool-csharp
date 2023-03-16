@@ -8,7 +8,7 @@ public abstract class Base
     /// <summary>
     /// Name property
     /// </summary>
-    private string name
+    public string name
     {
         get;
         set;
