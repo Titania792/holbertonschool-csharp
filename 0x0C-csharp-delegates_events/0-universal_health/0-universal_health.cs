@@ -24,7 +24,7 @@ public class Player
         else
         {
             this.maxHp = 100f;
-            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default..");
+            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
         }
         this.hp = this.maxHp;
     }
