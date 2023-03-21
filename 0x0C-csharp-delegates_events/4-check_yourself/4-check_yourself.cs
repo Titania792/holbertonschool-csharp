@@ -194,7 +194,7 @@ public class CurrentHPArgs : EventArgs
     /// Public float that cannot be modified.
     /// </summary>
     /// <value></value>
-    public float currentHp {get; private set;}
+    public float currentHp {get; set;}
 
     /// <summary>
     /// Constructor.
