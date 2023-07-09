@@ -18,7 +18,6 @@ class Queue<T>
     public void Enqueue(T element)
     {
         Node node = new Node(element);
-
         node.value = element;
 
         if (head == null)
@@ -29,8 +28,8 @@ class Queue<T>
         }
         else
         {
-            node.next = head;
-            head = node;
+            tail.next = node; // Add the new node at the end of the queue
+            tail = node;
         }
         count += 1;
     }
@@ -55,10 +54,10 @@ class Queue<T>
         }
     }
 
-/// <summary>
-/// removes the first node in the queue and returns its value
-/// </summary>
-/// <returns> node value </returns>
+    /// <summary>
+    /// removes the first node in the queue and returns its value
+    /// </summary>
+    /// <returns> node value </returns>
     public T Dequeue()
     {
         if (head == null && tail == null)
@@ -66,7 +65,7 @@ class Queue<T>
             Console.WriteLine("Queue is empty");
             return default(T);
         }
-        
+
         Node node = head;
         T Fvalue;
         if (node.next == null)
@@ -91,10 +90,10 @@ class Queue<T>
         return Fvalue;
     }
 
-/// <summary>
-///  returns value without removing the node
-/// </summary>
-/// <returns> value of the first node of the queue </returns>
+    /// <summary>
+    ///  returns value without removing the node
+    /// </summary>
+    /// <returns> value of the first node of the queue </returns>
     public T Peek()
     {
         if (head == null && tail == null)
@@ -107,9 +106,9 @@ class Queue<T>
 
     }
 
-/// <summary>
-/// prints the queue, starting from the head
-/// </summary>
+    /// <summary>
+    /// prints the queue, starting from the head
+    /// </summary>
     public void Print()
     {
         if (head == null)
