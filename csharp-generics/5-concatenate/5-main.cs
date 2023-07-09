@@ -1,5 +1,3 @@
-using System;
-
 class Program
 {
     static void Main(string[] args)
@@ -10,19 +8,19 @@ class Program
         myStrQ.Enqueue("holberton");
         myStrQ.Enqueue("school");
 
-        Console.WriteLine(myStrQ.Concatenate());
+        System.Console.WriteLine(myStrQ.Concatenate());
 
-        Console.WriteLine("----------");
+        System.Console.WriteLine("----------");
 
         Queue<int> myIntQ = new Queue<int>();
         myIntQ.Concatenate();
 
-        Console.WriteLine("----------");
+        System.Console.WriteLine("----------");
 
         Queue<char> myCharQ = new Queue<char>();
         myCharQ.Enqueue('a');
         myCharQ.Enqueue('b');
         myCharQ.Enqueue('c');
-        Console.WriteLine(myCharQ.Concatenate());
+        System.Console.WriteLine(myCharQ.Concatenate());
     }
 }

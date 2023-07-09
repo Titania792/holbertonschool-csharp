@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 /// <summary> Queue Class </summary>
 /// <typeparam name="T"> Template/Type of elements </typeparam>
@@ -18,7 +19,6 @@ class Queue<T>
     public void Enqueue(T element)
     {
         Node node = new Node(element);
-
         node.value = element;
 
         if (head == null)
@@ -29,8 +29,8 @@ class Queue<T>
         }
         else
         {
-            node.next = head;
-            head = node;
+            tail.next = node; // Add the new node at the end of the queue
+            tail = node;
         }
         count += 1;
     }
@@ -55,18 +55,18 @@ class Queue<T>
         }
     }
 
-/// <summary>
-/// removes the first node in the queue and returns its value
-/// </summary>
-/// <returns> node value </returns>
+    /// <summary>
+    /// removes the first node in the queue and returns its value
+    /// </summary>
+    /// <returns> node value </returns>
     public T Dequeue()
     {
         if (head == null && tail == null)
         {
-            Console.WriteLine("Queue is empty");
+            System.Console.WriteLine("Queue is empty");
             return default(T);
         }
-        
+
         Node node = head;
         T Fvalue;
         if (node.next == null)
@@ -91,15 +91,15 @@ class Queue<T>
         return Fvalue;
     }
 
-/// <summary>
-///  returns value without removing the node
-/// </summary>
-/// <returns> value of the first node of the queue </returns>
+    /// <summary>
+    /// returns value without removing the node
+    /// </summary>
+    /// <returns> value of the first node of the queue </returns>
     public T Peek()
     {
         if (head == null && tail == null)
         {
-            Console.WriteLine("Queue is empty");
+            System.Console.WriteLine("Queue is empty");
             return default(T);
         }
         Node node = tail;
@@ -107,21 +107,51 @@ class Queue<T>
 
     }
 
-/// <summary>
-/// prints the queue, starting from the head
-/// </summary>
+    /// <summary>
+    /// prints the queue, starting from the head
+    /// </summary>
     public void Print()
     {
         if (head == null)
         {
-            Console.WriteLine("Queue is empty");
+            System.Console.WriteLine("Queue is empty");
         }
 
         Node node = head;
         while (node != null)
         {
-            Console.WriteLine(node.value);
+            System.Console.WriteLine(node.value);
             node = node.next;
         }
+    }
+
+    /// <summary>
+    /// Concatenates all values in the queue if the queue is of type String or Char.
+    /// </summary>
+    /// <returns>The concatenated string or null.</returns>
+    public string Concatenate()
+    {
+        if (head == null)
+        {
+            System.Console.WriteLine("Queue is empty");
+            return null;
+        }
+
+        Type queueType = CheckType();
+        if (queueType != typeof(string) && queueType != typeof(char))
+        {
+            System.Console.WriteLine("Concatenate() is for a queue of Strings or Chars only.");
+            return null;
+        }
+
+        StringBuilder sb = new StringBuilder();
+        Node node = head;
+        while (node != null)
+        {
+            sb.Append(node.value);
+            node = node.next;
+        }
+
+        return sb.ToString();
     }
 }
